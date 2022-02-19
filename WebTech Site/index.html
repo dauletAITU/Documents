@@ -10,79 +10,69 @@
     <link rel="stylesheet" href="Marvel Encyclopedia.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bd-navbar bg-dark sticky-top">
-    <div class="container-fluid">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/1200px-Marvel_Logo.svg.png" alt="Logo" width="50" height="20" class="d-inline-block align-text-top">
-    <a class="navbar-brand" href="Marvel Encyclopedia.html">Guide Blog</a>
-    <button class="navbar-toggler"
-            type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-      <span class="fas fa-angle-double-down"></span>
-    </button>
-    <div class="collapse navbar-collapse"
-            id="navbarSupportedContent">
-      <ul class="navbar-nav  text-center me-auto ">
-        <li class="nav-item">
-          <a class="nav-link active"
-             aria-current="page"
-             href="Marvel Encyclopedia.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="movies.html">Movies</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="charachters.html">Characters</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="actors.html">Actors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="news.html">News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="merch.html">Merch</a>
-        </li>
-        <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             <span class="position-absolute top start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
-     <span class="visually-hidden">New alerts</span>
-   </span>
-             Actions
-           </a>
-           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-             <li><a class="dropdown-item" href="#">Profile</a></li>
-             <li><a class="dropdown-item" href="#">Messages</a></li>
-             <li><a class="dropdown-item" href="#">Forum</a></li>
-           </ul>
-         </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
 
-        </div>
-      </div>
-    </nav>
-<section>
-  <div class="container-xxl">
-    <div class="row align-items-center">
-  <div class="row">
-     <div class="col-lg-7">
-       <h1 class="cen-word"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/1200px-Marvel_Logo.svg.png" alt="Logo" width="200" height="80" <br> Guide Blog</h1>
-       <p class="mainText">The Marvel Cinematic Universe (also known as MCU) is an American media franchise and shared universe centered on a series of superhero films produced by Marvel Studios. The films are based on characters that appear in American comic books published by Marvel Comics.</p>
-     </div>
-     <div class="col-lg-5 col-md-8 col-sm-10">
-     </div>
-   </div>
- </div>
-</div>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/1200px-Marvel_Logo.svg.png" width="75" height="30">
+    <a href="index.html" class = "logo">Guide Book</a>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="charachters.html">Characters</a></li>
+      <li><a href="actors.html">Actors</a></li>
+      <li><a href="merch.html">Shop</a></li>
+    </ul>
+  </header>
+  <section class = "banner"></section>
+  <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+      var header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0)
+    })
+  </script>
+  <section class ="paral">
+    <img src="sky.png" id="sky">
+    <img src="avengers-tower.png" id="tower">
+    <h2 id="text">Marvel Guide Blog</h2>
+    <p id="paragraph">The Marvel Cinematic Universe (also known as MCU) is an American media <br>franchise and shared universe centered on a series of superhero films produced<br> by Marvel Studios. The films are based on characters that appear in American <br>comic books published by Marvel Comics.</p>
+    <a href="#" id="btn">Read More</a>
+    <img src="ironman1.png" id="hero">
 
-</section>
-<section class="karuselka">
+  </section>
+  <script type="text/javascript">
+    const buttons = document.querySelector('a');
+    buttons.forEach(btn => {
+      btn.addEventListener(click, function(e){
+        let x = e.clientX - e.target.offsetLeft;
+        let y = e.clientY - e.target.offsetTop;
+
+        let ripples = document.createElement('span');
+        ripples.style.left = x + 'px';
+        ripples.style.top = y + 'px';
+        this.appendChild(ripples);
+      })
+    });
+  </script>
+  <script>
+    let sky = document.getElementById('sky');
+    let tower = document.getElementById('tower');
+    let text = document.getElementById('text');
+    let paragraph = document.getElementById('paragraph');
+    let btn = document.getElementById('btn');
+    let hero = document.getElementById('hero');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      sky.style.left =value*(-0.25) + 'px';
+      tower.style.left =value*0.25 + 'px';
+      text.style.left =value*(-0.25) + 'px';
+      paragraph.style.left =value*(-0.25) + 'px';
+      btn.style.left =value*(-0.25) + 'px';
+      hero.style.left =value*0.5 + 'px';
+    })
+  </script>>
+
+
+  <section class="karuselka">
   <div class="container-xxl">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -172,8 +162,7 @@
 </div>
   </div>
 </section>
-
-    <div>
+  <div>
     <center>
     <h1 style="color:white;"> <hr><br>Please rate our site! </h1> <br>
     <form>

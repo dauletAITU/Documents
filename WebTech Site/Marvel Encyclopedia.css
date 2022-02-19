@@ -2,19 +2,157 @@
 *{
   margin: 0;
   padding: 0;
+    box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,6)),url(https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest?cb=20140703152342);
+    background: #41405d;
     background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center;
 background-size: cover;
-justify-content: center;
-align-items: center;
-box-sizing: border-box;
-align-items: center;
+/*justify-content: center;*/
+/*align-items: center;*/
+/*box-sizing: border-box;*/
+    min-height: 200vh;
 }
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 100000;
+}
+header img
+{
+    position: relative;
+    transition: 0.6s;
+}
+header .logo
+{
+    position: relative;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 1px;
+    margin-right: 580px;
+    transition: 0.6s;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+    margin-left: 30px;
+}
+header ul li a
+{
+    position: relative;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius:20px;
+    transition: 0.6s;
+    margin-top: 2px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+/*.banner*/
+/*{*/
+/*    position: relative;*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    background: #000000;*/
+/*    background-size: ;*/
+
+/*}*/
+header.sticky
+{
+padding: 10px 100px;
+    background: #2b1055;
+}
+.paral
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.paral img
+{
+
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text
+{
+    color: #2b1055;
+    padding-top: 150px;
+    position: absolute;
+    padding-left:100px;
+    padding-bottom: 30px;
+    margin-bottom: 300px;
+    font-weight: 700;
+    z-index: 10;
+    opacity: 0.7;
+
+}
+#paragraph
+{
+    font-weight: 400;
+    display: inline-block;
+    color: #2b1055;
+    position: absolute;
+    background: white;
+    padding: 100px 40px 40px 100px;
+    margin-bottom: 100px;
+    opacity: 0.7;
+}
+#btn
+{
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 1330px;
+    margin-top: 250px;
+    background: white;
+    border-radius: 15px;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 10;
+
+}
+
 .container{
   width: 100%;
   height: 100vh;
@@ -24,6 +162,13 @@ align-items: center;
   padding-right:10%;
   padding-left: 10%;
   box-sizing: border-box;
+}
+.containerr{
+    height: 100vh;
+    background: black;
+}
+.containerr img{
+    position: absolute;
 }
 .cen-word{
   color: white;
@@ -88,7 +233,7 @@ label {
   display: flex;
   align-items: center;
   border-radius: 20px;
-  transition: 0.5%;
+  transition: 0.5s;
 }
 .card .circle{
   position: absolute;
@@ -172,7 +317,7 @@ background: #d83133;
     display: inline-block;
     padding: 10px 20px;
     margin-top: 10px;
-    margin-left: ;
+    margin-left: 0;
     text-decoration: none;
     font-weight: 700;
 }
