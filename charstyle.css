@@ -1,22 +1,3 @@
-@import url('https://fonts.googleapis.com/css2family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-*
-{
-    margin: 10px;
-    padding: 10px;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,6)),url(https://static.wikia.nocookie.net/marvelcinematicuniverse/images/8/8a/Morag_1.jpg/revision/latest?cb=20140703152342);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 1000px;
-}
 .characterr
 {
     position: relative;
@@ -27,27 +8,31 @@ body{
 .characterr .cardd
 {
     position: relative;
-    width: 600px;
+    width: 500px;
     height: 350px;
     margin: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: linear-gradient(90deg,#a23742, #526b9d);
+    background-filter: blur(50px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.7);
+
 }
 .characterr .cardd img
 {
     position: absolute;
-    bottom: -20px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    height: 450px;
+    height: 350px;
     transition: 0.5s;
 }
+
+
 .characterr .cardd:hover img
 {
     left: 75%;
-    height: 500px;
+    height: 390px;
 }
 .characterr .cardd .contentt
 {
@@ -61,7 +46,8 @@ body{
 }
 .characterr .cardd:hover .contentt
 {
-    left: 0; visibility: visible;
+    left: 0;
+    visibility: visible;
     opacity: 1;
 }
 .characterr .cardd .contentt h2
@@ -90,6 +76,120 @@ body{
 @media (max-width: 991px)
 {
 .characterr .cardd
+    {
+    width: auto;
+    }
+}
+.characterr1 .cardd1
+{
+    position: relative;
+    width: 250px;
+    height: 190px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-filter: blur(50px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.7);
+
+}
+.characterr1 .cardd1 img
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    transition: 0.5s;
+}
+
+
+.characterr1 .cardd1:hover img
+{
+    left: 75%;
+    height: 230px;
+}
+.characterr1 .cardd1 .contentt1 h2
+{
+    color: #bfc1c2;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 0.5em;
+}
+.characterrb
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.characterrb .carddb
+{
+    position: relative;
+    width: 750px;
+    height: 450px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-filter: blur(50px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.7);
+}
+.characterrb .carddb img
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 450px;
+    transition: 0.5s;
+}
+.characterrb .carddb:hover img
+{
+    left: 75%;
+    height: 500px;
+}
+.characterrb .carddb .contenttb
+{
+    position:relative;
+    width: 50%;
+    left: 0;
+    padding: 20px 20px 20px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.characterrb .carddb:hover .contenttb
+{
+    left: 0; visibility: visible;
+    opacity: 1;
+}
+.characterrb .carddb .contenttb h2
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    line-height: 1em;
+}
+.characterrb .carddb .contenttb p
+{
+    color: white;
+}
+.characterrb .carddb .contenttb a
+{
+    position: relative;
+    color: black;
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+@media (max-width: 991px)
+{
+.characterrb .carddb
     {
     width: auto;
     }
