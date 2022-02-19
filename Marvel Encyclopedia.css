@@ -328,3 +328,27 @@ background: #d83133;
     width: auto;
 }
 }
+.button1 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 4px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 9px;
+}
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
