@@ -256,3 +256,23 @@ background: #d83133;
   box-shadow: 0 5px #121212;
   transform: translateY(4px);
 }
+.divmain {
+  margin-top: 25px;
+  width: 75%;
+  height: 600px;
+  left: 50%;
+  right: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  background-image: url('https://i.insider.com/5e16567b49878c544d4f94c5');
+  background-size: 100% 100%;
+  box-shadow: 1px 1px 10px 5px black;
+  animation: slider 15s infinite linear;
+
+}
+@keyframes slider {
+  15%{background-image: url('https://www2.pictures.zimbio.com/mp/9f-Tw0cdxFVx.jpg');}
+  36%{background-image: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2020/03/Training-Article-Feature-Image.jpg');}
+  57%{background-image: url('https://d23.com/app/uploads/2018/05/1180w-600h_050218_mcu-iconic-marvel-moments-780x440.jpg');}
+  78%{background-image: url('https://images.assettype.com/freepressjournal/2020-04/564a7e61-99df-4e19-9556-1267c8f8460a/captian_hammer.webp'); }
+}
