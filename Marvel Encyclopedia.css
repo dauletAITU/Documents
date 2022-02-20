@@ -231,26 +231,28 @@ background: #d83133;
 }
 
 .button1 {
-  background-color: black;
-  border: none;
-  color: white;
   padding: 5px 10px;
+  font-size: 24px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 2px 4px;
-  transition-duration: 0.4s;
   cursor: pointer;
+  outline: none;
+  background-color: #e5e4e2;
+  color: #262626;
+  border: none;
   border-radius: 9px;
-}
-.button1 {
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
+  box-shadow: 0 9px #bfc1c2;
+  font-family: fantasy;
 }
 
 .button1:hover {
-  background-color: black;
+  background-color: #262626;
   color: white;
+    box-shadow: 0 9px #121212;
+}
+
+.button1:active {
+  background-color: #262626;
+  color: white;
+  box-shadow: 0 5px #121212;
+  transform: translateY(4px);
 }
