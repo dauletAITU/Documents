@@ -475,23 +475,216 @@ background: #d83133;
   box-shadow: 0 5px #121212;
   transform: translateY(4px);
 }
-.divmain {
-  margin-top: 25px;
-  width: 75%;
-  height: 600px;
-  left: 50%;
-  right: 50%;
-  position: absolute;
-  transform: translate(-50%);
-  background-image: url('https://i.insider.com/5e16567b49878c544d4f94c5');
-  background-size: 100% 100%;
-  box-shadow: 1px 1px 10px 5px black;
-  animation: slider 15s infinite linear;
+
+.characterr
+{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.characterr .cardd
+{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-filter: blur(50px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.7);
 
 }
-@keyframes slider {
-  15%{background-image: url('https://www2.pictures.zimbio.com/mp/9f-Tw0cdxFVx.jpg');}
-  36%{background-image: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2020/03/Training-Article-Feature-Image.jpg');}
-  57%{background-image: url('https://d23.com/app/uploads/2018/05/1180w-600h_050218_mcu-iconic-marvel-moments-780x440.jpg');}
-  78%{background-image: url('https://images.assettype.com/freepressjournal/2020-04/564a7e61-99df-4e19-9556-1267c8f8460a/captian_hammer.webp'); }
+.characterr .cardd img
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 350px;
+    transition: 0.5s;
+}
+
+
+.characterr .cardd:hover img
+{
+    left: 75%;
+    height: 390px;
+}
+.characterr .cardd .contentt
+{
+    position:relative;
+    width: 50%;
+    left: 0;
+    padding: 20px 20px 20px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.characterr .cardd:hover .contentt
+{
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.characterr .cardd .contentt h2
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+    font-family: fantasy;
+}
+.characterr .cardd .contentt p
+{
+    color: white;
+    font-family: fantasy;
+}
+.characterr .cardd .contentt a
+{
+    position: relative;
+    color: black;
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: fantasy;
+}
+@media (max-width: 991px)
+{
+.characterr .cardd
+    {
+    width: auto;
+    }
+}
+.characterr1 .cardd1
+{
+    position: relative;
+    width: 250px;
+    height: 190px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-filter: blur(50px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.7);
+
+}
+.characterr1 .cardd1 img
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    transition: 0.5s;
+}
+
+
+.characterr1 .cardd1:hover img
+{
+    left: 75%;
+    height: 230px;
+}
+.characterr1 .cardd1 .contentt1 h2
+{
+    color: #bfc1c2;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 0.5em;
+    font-family: fantasy;
+}
+.characterr1 .cardd1 .contentt1 h1
+{
+    color: #bfc1c2;
+    text-transform: uppercase;
+    font-size: 1.9em;
+    line-height: 0.5em;
+    font-family: fantasy;
+}
+.characterrb
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.characterrb .carddb
+{
+    position: relative;
+    width: 750px;
+    height: 450px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-filter: blur(50px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.7);
+}
+.characterrb .carddb img
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 450px;
+    transition: 0.5s;
+}
+.characterrb .carddb:hover img
+{
+    left: 75%;
+    height: 500px;
+}
+.characterrb .carddb .contenttb
+{
+    position:relative;
+    width: 50%;
+    left: 0;
+    padding: 20px 20px 20px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.characterrb .carddb:hover .contenttb
+{
+    left: 0; visibility: visible;
+    opacity: 1;
+}
+.characterrb .carddb .contenttb h2
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    line-height: 1em;
+    font-family: fantasy;
+}
+.characterrb .carddb .contenttb p
+{
+    color: white;
+    font-family: fantasy;
+}
+.characterrb .carddb .contenttb a
+{
+    position: relative;
+    color: black;
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: fantasy;
+}
+@media (max-width: 991px)
+{
+.characterrb .carddb
+    {
+    width: auto;
+    }
 }
