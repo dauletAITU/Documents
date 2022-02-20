@@ -1,5 +1,7 @@
+
 .characterr
 {
+
     position: relative;
     display: flex;
     justify-content: center;
@@ -56,10 +58,12 @@
     text-transform: uppercase;
     font-size: 2.2em;
     line-height: 1em;
+    font-family: fantasy;
 }
 .characterr .cardd .contentt p
 {
     color: white;
+    font-family: fantasy;
 }
 .characterr .cardd .contentt a
 {
@@ -72,6 +76,7 @@
     margin-left: 20px;
     text-decoration: none;
     font-weight: 700;
+    font-family: fantasy;
 }
 @media (max-width: 991px)
 {
@@ -115,6 +120,7 @@
     text-transform: uppercase;
     font-size: 1.2em;
     line-height: 0.5em;
+    font-family: fantasy;
 }
 .characterrb
 {
@@ -170,10 +176,12 @@
     text-transform: uppercase;
     font-size: 2.8em;
     line-height: 1em;
+    font-family: fantasy;
 }
 .characterrb .carddb .contenttb p
 {
     color: white;
+    font-family: fantasy;
 }
 .characterrb .carddb .contenttb a
 {
@@ -186,6 +194,7 @@
     margin-left: 20px;
     text-decoration: none;
     font-weight: 700;
+    font-family: fantasy;
 }
 @media (max-width: 991px)
 {
