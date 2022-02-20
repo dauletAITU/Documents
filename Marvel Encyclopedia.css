@@ -12,71 +12,86 @@ background-position: center;
 background-size: cover;
 
 }
-header
+nav
 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 30px 100px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 8vh;
+    font-size: 20px;
     transition: 0.6s;
     z-index: 100000;
 }
-header img
-{
+nav img {
     position: relative;
     transition: 0.6s;
 }
-header .logo
+nav .logo
 {
     position: relative;
     color: white;
     font-weight: 700;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-top: 1px;
-    margin-right: 580px;
+    margin-right: 500px;
     transition: 0.6s;
 }
-header ul
+.navl ul
 {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px
+    margin-top: 20px;
+    width: 40%;
 }
-header ul li
-{
+.navl ul li {
     position: relative;
     list-style: none;
     margin-left: 30px;
 }
-header ul li a
-{
+.navl ul li a {
     position: relative;
     text-decoration: none;
     padding: 6px 15px;
     color: #fff;
-    border-radius:20px;
+    border-radius: 20px;
     transition: 0.6s;
     margin-top: 2px;
 }
-header ul li a:hover,
-header ul li a.active
+.navl ul li a:hover,
+.navl ul li a.active
 {
     background: #fff;
     color: #2b1055;
 }
-header.sticky
+
+.navl.sticky
 {
 padding: 10px 100px;
     background: #2b1055;
+}
+.navl.icon {
+  display: none;
+}
+
+@media only screen and (min-width: 100px) {
+	nav, nav ul{
+		display: column;
+	}
+}
+
+@media only screen and (min-width: 767px) {
+nav, nav ul{
+		display: flex;
+	}
 }
 .paral
 {
@@ -228,6 +243,210 @@ left: 0;
 width: 100%;
 height: 100%;
 background: #d83133;
+}
+.characterr
+{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.characterr .cardd
+{
+    position: relative;
+    width: 500px;
+    height: 350px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-filter: blur(50px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.7);
+
+}
+.characterr .cardd img
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 350px;
+    transition: 0.5s;
+}
+
+
+.characterr .cardd:hover img
+{
+    left: 75%;
+    height: 390px;
+}
+.characterr .cardd .contentt
+{
+    position:relative;
+    width: 50%;
+    left: 0;
+    padding: 20px 20px 20px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.characterr .cardd:hover .contentt
+{
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+}
+.characterr .cardd .contentt h2
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.2em;
+    line-height: 1em;
+    font-family: fantasy;
+}
+.characterr .cardd .contentt p
+{
+    color: white;
+    font-family: fantasy;
+}
+.characterr .cardd .contentt a
+{
+    position: relative;
+    color: black;
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: fantasy;
+}
+@media (max-width: 991px)
+{
+.characterr .cardd
+    {
+    width: auto;
+    }
+}
+.characterr1 .cardd1
+{
+    position: relative;
+    width: 250px;
+    height: 190px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-filter: blur(50px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.7);
+
+}
+.characterr1 .cardd1 img
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    transition: 0.5s;
+}
+
+
+.characterr1 .cardd1:hover img
+{
+    left: 75%;
+    height: 230px;
+}
+.characterr1 .cardd1 .contentt1 h2
+{
+    color: #bfc1c2;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    line-height: 0.5em;
+    font-family: fantasy;
+}
+.characterrb
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.characterrb .carddb
+{
+    position: relative;
+    width: 750px;
+    height: 450px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-filter: blur(50px);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.7);
+}
+.characterrb .carddb img
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 450px;
+    transition: 0.5s;
+}
+.characterrb .carddb:hover img
+{
+    left: 75%;
+    height: 500px;
+}
+.characterrb .carddb .contenttb
+{
+    position:relative;
+    width: 50%;
+    left: 0;
+    padding: 20px 20px 20px 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.characterrb .carddb:hover .contenttb
+{
+    left: 0; visibility: visible;
+    opacity: 1;
+}
+.characterrb .carddb .contenttb h2
+{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    line-height: 1em;
+    font-family: fantasy;
+}
+.characterrb .carddb .contenttb p
+{
+    color: white;
+    font-family: fantasy;
+}
+.characterrb .carddb .contenttb a
+{
+    position: relative;
+    color: black;
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: fantasy;
+}
+@media (max-width: 991px)
+{
+  .characterrb .carddb
+    {
+    width: auto;
+    }
 }
 
 .button1 {
